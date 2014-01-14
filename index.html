@@ -34,34 +34,56 @@
           <h3>
 <a name="Witam na moim blogu" class="anchor" href="#Witam na moim blogu"><span class="octicon octicon-link"></span></a>Witam na moim blogu.</h3>
 
-<p>Tutaj cos sie napisze i beidze git</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
+<h1>Jekyll-Blog HOWTO</h1>
+
+<h2>Markdown</h2>
+
+<p>Posty wpisujemy używając notacji Markdown.
+Notacja jest opisana przez autora Johna Grubera
+w witrynie <a href="http://daringfireball.net/projects/markdown/syntax">Daring Fireball</a>.</p>
+
+<h2>Kolorowanie kodu</h2>
+
+<p>Kod wpisujemy tak:</p>
+
+<pre>
+&#123;% highlight ruby %&#125;
+def foo
+  puts 'foo'
+end
+&#123;% endhighlight %&#125;
+</pre>
+
+
+<p>A tak to wygląda po podkolorowaniu:</p>
+
+<div class="highlight"><pre><span class="k">def</span> <span class="nf">foo</span>
+  <span class="nb">puts</span> <span class="s1">&#39;foo&#39;</span>
+<span class="k">end</span>
+</pre>
+</div>
+
+
+<p>Kod jest kolorowany przez narzędzie
+<a href="http://pygments.org/docs/cmdline/">pygmentize</a>.
+Wykonanie polecenia:</p>
+
+<pre><code>pygmentize -L lexers
+...
+* css+erb, css+ruby:
+* erb:
+* js+erb, javascript+erb, js+ruby, javascript+ruby:
+* rhtml, html+erb, html+ruby:
+* xml+erb, xml+ruby
+...
 </code></pre>
 
-<p>Tu tez cos napisze</p>
+<p>wypisuje listę obsługiwanych języków programowania.</p>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+</div>
 
-<p>Tu tez cos sie napisze</p>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p> <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>tu koment <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
         </section>
 
         <footer>
